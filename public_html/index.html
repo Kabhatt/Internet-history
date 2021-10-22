@@ -5,16 +5,31 @@
     <title>Home</title>
     <meta name="Internet" content="This is a history of the internet, and how it was developed to what it is today">
     <link rel="stylesheet" href="css/style.css">
+<style>
+    h1{
+        font-size: x-large;
+    }
+    .green{
+        color:darkseagreen;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    #primarylinks {
+        border: 2px solid deepskyblue;
+    }
+</style>
+
 </head>
 <body>
-<menu>
+<menu id="primarylinks">
     <li><a href="index.html">Home</a></li>
     <li><a href="content.html">Content</a></li>
 </menu>
 <article>
     <h1> History of the Internet </h1>
     <h2>What is the internet?</h2>
-    <p>
+    <p class="bold">
     Created by Bob Kahn and Vint Cerf in the early 1970s, based on the ARPAnet of the US defense dept, which was created out of necessity of the cold war and threat of nuclear war that had the possibility of killing all communication.
     The ARPAnet lead to mesh network and helped create the packet network.  The internet is made of independently operated networks, that help ships binary information
     Bits are pieces of information that are made of 1s or 0s, these are sent by lights, electricity or radio waves.
@@ -34,7 +49,7 @@
     to binary. Wireless still depends on wires though to get signals.
     <p>
 
-    <h3>How do we get to our destination on webpages?</h3>
+    <h3 class="green">How do we get to our destination on webpages?</h3>
     <ul>
             <li> Information on the internet goes from one place to another via packets that follow
                 certain paths. Routers help these packets that direct them to their destination. </li>
