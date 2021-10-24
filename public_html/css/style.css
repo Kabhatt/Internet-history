@@ -2,6 +2,12 @@ h1 {
     color:mediumseagreen;
     font-weight: bold;"
 }
+h2 {
+    color: black;
+    font: bold;
+    font-style: italic;
+
+}
 
 h3{
     color:cadetblue;

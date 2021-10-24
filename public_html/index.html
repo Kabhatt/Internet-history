@@ -20,53 +20,57 @@
         font-weight: bold;
     }
     #primarylinks{
-        border-color: green;
+        background-color: cadetblue;
         width: 100px;
-        height: 100px;
+        height: 30px;
         float: right;
         align-items: normal;
-    }
-    #primarylinks li{
-        display: inline;
     }
     #primarylinks Menu{
         padding-top:90px;
         padding-left:90px;
         margin: 100px;
     }
+    #primarylinks li{
+        display: inline;
+    }
+    #primaryContent{
+        position: relative;
+        line-height: 2;
+        float: right;
+    }
     #logo{
-        position: absolute;
+        position: relative;
         display: inline-block;
-
+        clear: both;
     }
     #Welcome{
         width: 600px;
         float: left;
         clear: both;
     }
-    #secondaryContent{
-        width: 200px;
-        height: 100px;
-        float: right;
-        margin-top: 30px;
-    }
-    #wrapper {
-        width: 960px;
-        margin-left: auto;
-        margin-right: auto;
+    #image{
+        position: relative;
+        float: left;
     }
     #footer{
-        display: inline-block;
-        width: 2000px;
-        height: 100px;
-        margin-top: 10px;
-        margin-left: 50px;
+        margin-top: 700px;
+        width: 600px;
         background-color: yellowgreen;
-
+        float: left;
+    }
+    #secondaryContent{
+        width: 100px;
+    }
+    #wrapper {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
     }
 </style>
 </head>
 <body>
+</div>
 <div id="wrapper">
 <div id=logo>
     <img width= "99px" src="images/anchordesign.png" alt="Anchor Design">
@@ -78,19 +82,25 @@
 <div>
 <artcle id="Welcome">
     <h1>Welcome to my Site</h1>
-    What this site contains
+    <div id="primaryContent">
+    <h2>What this site contains</h2>
         Welcome to my first webpage.
         This website will display a brief history about the internet, and it's origins as well as give you, the audience an overview about me.
          It is important to understand that this website is still being developed, so you may see new content every week or so.
         This website is part of a project for a course being taken
         so please bear with the author and the editor of this webpage.
         It is my hope that you will enjoy reading my material.
-</artcle>
-    <div id="secondaryContent">
-        <svg height="100" width="600">
-            <path d="M150 0 L75 200 L225 200 2"/>
-        More to come.Please Come Back in a week.
     </div>
+    <div id="image">
+    <img width= "300" height="300" src="images/coffee.png" alt="coffee and papers"  >
+    </div>
+        <div id="secondaryContent">
+        <svg width="300" height="200">
+            <polygon points="100,10 40,198 190,78 10,78 160,198"
+                     style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+        </svg>
+    </div>
+</artcle>
     <footer id="footer">
        Practice site by Kashish Bhatt
     </footer>
