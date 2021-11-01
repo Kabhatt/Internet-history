@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
@@ -8,106 +8,115 @@
     <link rel="stylesheet" href="css/style.css">
 <style>
     body{
-        background-color: lightyellow;
+        background-color: black;
+        background-position: 400% 40%;
+        background-repeat: repeat;
     }
-    h1{
-        font-size: x-large;
+    .hero{
+        position: relative;
+        width: 100vw;
+        height: 67vw;
     }
-    .green{
-        color:darkseagreen;
+    .hero::before {
+        content: url("");
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 67%;
+        background: url("images/coffee.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        filter: brightness(60%);
     }
-    .bold{
-        font-weight: bold;
+    .hero-content {
+        position: relative;
+        font-family: "Sama Gurmukhi", sans-serif;
+        color: olive;
+        text-align: center;
+        margin: 0.625rem;
+    }
+    .hero-title {
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 0;
+    }
+    .hero-subtitle{
+        color: white;
+        font-size: 2rem;
+        font-weight: 200;
+        margin: 0;
+    }
+    .hero-button {
+        background-color: grey;
+        margin: 1px solid #e0ffff;
+        margin-top:275px;
+        padding: 15px;
+        font-family: "Sama Gurmukhi", sans-serif;
+        font-size: 1.125rem;
+        cursor: pointer;
+    }
+    .hero-button:hover{
+        background-color: gray;
+        border: 1px solid coral;
     }
     #primarylinks{
-        background-color: cadetblue;
-        width: 100px;
-        height: 30px;
-        float: right;
-        align-items: normal;
-    }
-    #primarylinks Menu{
-        padding-top:90px;
-        padding-left:90px;
-        margin: 100px;
-    }
-    #primarylinks li{
-        display: inline;
-    }
-    #primaryContent{
-        position: relative;
-        line-height: 2;
-        float: right;
-    }
-    #logo{
-        position: relative;
-        display: inline-block;
-        clear: both;
-    }
-    #Welcome{
-        width: 600px;
-        float: left;
-        clear: both;
-    }
-    #image{
-        position: relative;
-        float: left;
+        background-color: black;
+        color: white;
+        position: absolute;
+        top: 40px;
+        right: 50px;
     }
     #footer{
-        margin-top: 700px;
-        width: 600px;
-        background-color: yellowgreen;
-        float: left;
+        position: relative;
+        float: right;
+        margin-bottom:10px;
+        margin-top:1px;
+        margin-right: 40px;
+        color: white;
     }
-    #secondaryContent{
-        width: 100px;
-    }
-    #wrapper {
-        width: 96%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
 </style>
 </head>
 <body>
-
-</div>
-<div id="wrapper">
 <div id=logo>
     <img width= "99px" src="images/anchordesign.png" alt="Anchor Design">
 </div>
 <menu id="primarylinks">
     <a href="index.html">Home</a>
     <a href="content.html">History</a>
-    <a hrf="secondarycontent.html">About Internet</a>
+    <a href="secondarycontent.html">About Internet</a>
 </menu>
-<div>
-<artcle id="Welcome">
-    <h1>Welcome to my Site</h1>
-    <div id="primaryContent">
-    <h2>What this site contains</h2>
-        Welcome to my first webpage.
+<section class="hero">
+<div class="hero-content">
+    <h1 class="hero-title">
+    Welcome To My First Site
+        </h1>
+    <h2 class="hero-subtitle">
+        About This site:
+        <p>Welcome to my first webpage.
         This website will display a brief history about the internet, and it's origins as well as give you, the audience an overview about me.
-         It is important to understand that this website is still being developed, so you may see new content every week or so.
+        It is important to understand that this website is still being developed, so you may see new content every week or so.
         This website is part of a project for a course being taken
         so please bear with the author and the editor of this webpage.
-        It is my hope that you will enjoy reading my material.
-    </div>
-    <div id="image">
-    <img width= "300" height="300" src="images/coffee.png" alt="coffee and papers"  >
-    </div>
-        <div id="secondaryContent">
-        <svg width="300" height="200">
-            <polygon points="100,10 40,198 190,78 10,78 160,198"
-                     style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
-        </svg>
-    </div>
-</artcle>
-    <footer id="footer">
-       Practice site by Kashish Bhatt
-    </footer>
-</article>
+            It is my hope that you will enjoy reading my material.</p>
 </div>
+    </h2>
+    <button type="button" class="hero-button" onclick= "location.href='content.html'"
+     <p/>Learn about the History of the Internet</p>
+    </button>
+
+        </div>
+
+    </h2>
+</section>
+
+<footer>
+    <div id="footer">
+        <p> Website by Kashish Bhatt for IS601</p>
+    </div>
+</footer>
 </body>
 </div>
 </html>
