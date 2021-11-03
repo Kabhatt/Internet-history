@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>What is The Internet?</title>
@@ -11,54 +11,76 @@
         background-position: 50% 50%;
         background-repeat: repeat;
     }
+    #logo{
+        background-color: black;
+        background-position: 50% 50%;
+        margin: auto;
+        display: inline-block;
+    }
+    #primarybody{
+        background-color: black;
+        padding: 10 20px;
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        position: relative;
+        align-items: inherit;
+        float: right;
+        margin: auto;
+        height: 50%;
+        width: 20%;
+
+    }
     #primarylinks{
-        background-color: darkgoldenrod;
-        border-color: whitesmoke;
+        float: top;
+        color: white;
+        display: inline-block;
+        margin-top: 1px;
+        margin: auto;
+    }
+    #Main{
+        background-color: black;
+        color: bisque;
+        float: inside;
+
+    }
+    #image{
         position: relative;
         float: right;
-        display: inline;
-        height: 20px;
-        width: 200px;
+        margin-left: auto;
+
     }
+    #wrapper {
+        width: 0 auto;
+        margin: 0 auto;
     }
+
 </style>
 <body>
-<div id="primarybody">
-    <menu id="primarylinks">
-        <a href="index.html">Home</a>
-        <a href="content.html">History</a>
-        <a href="secondarycontent.html">About Internet</a>
+<div id="wrapper">
+<div id=logo>
+    <img width= "99px" src="images/anchordesign.png" alt="Anchor Design">
 </div>
-<article id="primarycontent"/>
-<h1> History of the Internet <i class="fab fa-internet-explorer"></i></h1>
+<div id="primarybody" >
+    <menu id="primarylinks">
+        <a href="index.html" style="color: aliceblue">Home </a>
+        <a href="content.html"style="color: aliceblue" >History</a>
+        <a href="secondarycontent.html"style="color: aliceblue">About Internet</a>
+</div>
+<div id="Main">
+<h1> History of the Internet <iclass="fab fa-internet-explorer"></i></h1>
 <h2>What is the internet?</h2>
 <p class="bold">
-    Created by Bob Kahn and Vint Cerf in the early 1970s, based on the ARPAnet of the US defense dept, which was created out of necessity of the cold war and threat of nuclear war that had the possibility of killing all communication.
-    The ARPAnet lead to mesh network and helped create the packet network.  The internet is made of independently operated networks, that help ships binary information
-    Bits are pieces of information that are made of 1s or 0s, these are sent by lights, electricity or radio waves.
-<p>
-    <image height="200px" width="200px" src="images/wires.jpg" alt="Computer Wires"/>
-
-</p>
-The bandwidth is the maximum capacity of transmission of bits, this is measured by Bitrate that is the number of bits per second a system can transmit.  Latency is the amount of time it takes for 1 bit to be received by the receiver.
-These bits are sent through ethernet wires, which causes a lot of signal loss within
-feet, so for world wide web, light is used to help transmit bits as light beams through fiber optic cables made of glass and mirrors.
-<p>
-</p>
-These cables are buried in the ocean floor. Because fiber wires are expensive and hard to work with we often use copper
-wires for most networking. There are also wireless options.
-<p>
-</p>
-Wireless bit sending machines use radio signals to transfer bits from one place to another. The wireless bit sending machines that
-translate 1s and 0s to radio waves to send and the receiving machines reverses it
-to binary. Wireless still depends on wires though to get signals.
-<p>
+    Created by Bob Kahn and Vint Cerf in the early 1970s, and evolved to what we know it as now, the internet is a network that connects computers across the world, allowing for information exchange.
+    The internet works using small segments of information, called packets and these packets contain both the information and the data. The information packet has content known as header, which like a head,
+    is the first thing to reach the machine that is receiving the information and it is what helps the machine understand what needs to be done with the packet. These packets are transported to their destination by routers. Every router has a path, and the most important
+    factor is the politics and time management of the companies.
+    <div id="image">
+    <p position= "relative" style="float: right;"><img src="images/computerimage.png" height="230px" width="200px" border="1px"></p>
+</div>
 <h3 class="green">How do we get to our destination on webpages?</h3>
+
 <ul>
-    <li> Information on the internet goes from one place to another via packets that follow
-        certain paths. Routers help these packets that direct them to their destination. </li>
-    <li> Every router has a path, and the most important factor is the politics and time
-        management of the companies </li>
     <li> All devices on the internet have unique IP addresses that are just numbers. These
         are unique to device or network. This helps build the Internet protocol or the IP,
         which basically helps sends messages to another server or computer to get to the
@@ -82,11 +104,21 @@ to binary. Wireless still depends on wires though to get signals.
         https:/ links. These are secured connections that are given a digital certificates that
         are given by trusted securities.</li>
 </ul>
+</p>
+<h4> There is also another component of how connectivity works.</h4>
+    <p position= "relative" style="float: inside;"><img src="images/fiber-optic-cable.jpeg" height="150px" width="150px" border="1px"></p>
+<p> Fiber optic cables help carry and direct long distance internet traffic to the right places. This is what allows
+the connectivity to happen across the world. These cables are buried in the ocean floor. Because fiber wires are expensive and hard to work with we often use copper
+wires for most networking. There are also wireless options. Wireless bit sending machines use radio signals to transfer bits from one place to another. The wireless bit sending machines that
+translate 1s and 0s to radio waves to send and the receiving machines reverses it to binary. Wireless still depends on wires though to get signals. Since speed is really important in getting the information needed, which was the original
+reason the internet was created, it is important to understand how speed works and is impacted. Intenet speed is usually talked about in bandwidth. The bandwidth is the maximum capacity of transmission of bits, this is measured by Bitrate that is the number of bits per second a system can transmit.  Latency is the amount of time it takes for 1 bit to be received by the receiver.  These bits are sent through ethernet wires, which causes a lot of signal loss within feet, so for world wide web, light is used to help transmit bits as light beams through fiber optic cables made of glass and mirrors.
 
+</p>
+</div>
 </div>
 <footer id="footer">
     Sample page by Kashish Bhatt
 </footer>
-
+</div>
 </body>
 </html>
